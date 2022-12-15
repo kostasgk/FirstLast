@@ -9,9 +9,9 @@ pipeline {
           }
         }
 
-        stage('') {
+        stage('error') {
           steps {
-            sh 'javac Main.java'
+            sh 'javac FirstLastDigitSum.java'
           }
         }
 
