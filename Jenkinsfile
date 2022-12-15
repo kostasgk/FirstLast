@@ -1,9 +1,20 @@
 pipeline {
   agent any
   stages {
-    stage('') {
-      steps {
-        echo 'Compile'
+    stage('Test') {
+      parallel {
+        stage('Test') {
+          steps {
+            echo 'Compile'
+          }
+        }
+
+        stage('') {
+          steps {
+            sh 'javac Main.java'
+          }
+        }
+
       }
     }
 
