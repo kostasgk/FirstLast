@@ -14,6 +14,7 @@ pipeline {
             sh '''javac FirstLastDigitSum.java
 java FirstLastDigitSum
 '''
+            echo 'compile'
           }
         }
 
